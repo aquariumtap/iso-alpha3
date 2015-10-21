@@ -4,12 +4,23 @@ $susy: (
     gutters: 1/4,
 );
 
-#application {
+.container {
     @include container(1000px);
 }
 
+.generated-wrapper {
+  padding: 1em 0;
+  background-color: #F6F3EF;
+}
+
 body {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial";
+  padding: 0;
+  margin: 0;
+}
+
+ol li {
+  margin-bottom: 0.5em;
 }
 
 label {

@@ -5,6 +5,13 @@ define(["papaparse", "models/countries", "tpl!template/converter.html"],
 
     template: Template,
 
+    events: {
+      "click #start-conversion": function(e) {
+        e.preventDefault();
+        this.doConversion();
+      }
+    },
+
     config: {
       countryCodeFieldSuffix: "_isoa3"
     },
@@ -27,13 +34,6 @@ define(["papaparse", "models/countries", "tpl!template/converter.html"],
       fastMode: undefined,
       beforeFirstChunk: undefined,
       withCredentials: undefined
-    },
-
-    events: {
-      "click #start-conversion": function(e) {
-        e.preventDefault();
-        this.doConversion();
-      }
     },
 
     initialize: function() {

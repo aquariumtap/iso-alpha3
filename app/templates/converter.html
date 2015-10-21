@@ -1,27 +1,40 @@
-<h1>Detect country names</h1>
+<div class="container">
+  <h1>Add country codes to your CSV</h1>
 
-<p>Paste your CSV. Detected country names will be replaced with their ISO equivalent.</p>
+  <ol>
+    <li>Paste your CSV into the "input" field. The first row should contain the field names.</li>
+    <li>Copy and paste the fields that have country names in them into the field "Comma separated list of country fields". If you skip this step, then all fields will be checked for valid country names.</li>
+    <li>Click the "Add country codes" button. Rows that contain complete matches will be output in the "Output" field. If some country names could not be matched, they will be output into the "Bad lines" textarea.</li>
+  </ol>
 
-<div class="row">
-  <label for="country-fields">Comma separated list of country fields</label>
-  <input type="text" id="country-fields" class="input-line" value="correspondent state,claimant state" />
+  <div class="row">
+    <label for="data-input">Input</label>
+    <textarea id="data-input"></textarea>
+  </div>
+
+  <div class="row">
+    <label for="country-fields">Comma separated list of country fields</label>
+    <input type="text" id="country-fields" class="input-line" value="" />
+  </div>
+
+  <div class="row">
+    <button id="start-conversion">Add country codes</button>
+  </div>
 </div>
 
-<div class="row">
-  <button id="start-conversion">Run</button>
-</div>
 
-<div class="row">
-  <label for="data-input">Input</label>
-  <textarea id="data-input"></textarea>
-</div>
+<div class="generated-wrapper">
+  <div class="container">
 
-<div class="row">
-  <label for="data-output">Output</label>
-  <textarea id="data-output"></textarea>
-</div>
+    <div class="row">
+      <label for="data-output">Output</label>
+      <textarea id="data-output"></textarea>
+    </div>
 
-<div class="row">
-  <label for="data-bad">Bad lines</label>
-  <textarea id="data-bad"></textarea>
+    <div class="row">
+      <label for="data-bad">Bad lines</label>
+      <textarea id="data-bad"></textarea>
+    </div>
+
+  </div>
 </div>
