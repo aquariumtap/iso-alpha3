@@ -1,0 +1,40 @@
+@import "susy";
+$susy: (
+    columns: 12,
+    gutters: 1/4,
+);
+
+#application {
+    @include container(1000px);
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+label {
+  display: block;
+  font-size: 12px;
+}
+
+input {
+  padding: 10px;
+
+  &.input-line {
+    width: 300px;
+  }
+}
+
+textarea {
+  width: 100%;
+  min-height: 300px;
+  padding: 10px;
+}
+
+.row {
+  margin-bottom: 2em;
+}
+
+button {
+  font-size: 16px;
+}
