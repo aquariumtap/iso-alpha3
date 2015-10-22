@@ -5,7 +5,7 @@ the [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) count
 
 ## Installation
 
-Requires npm, bower and grunt. To install necessary the packages and start the Express server: 
+Requires npm, bower and grunt. To install the necessary packages and boot up an Express server: 
 
 ```
 npm install && bower install
